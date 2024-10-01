@@ -1,0 +1,14 @@
+Models:
+  - Name: diffusiondet_r50_fpn_500-proposals_1-step_crop-ms-480-800-450k_coco
+    In Collection: Feature Pyramid Grids
+    Config: projects/DiffusionDet/configs/diffusiondet_r50_fpn_500-proposals_1-step_crop-ms-480-800-450k_coco.py
+    Metadata:
+      Training Memory (GB): 20.0
+      Epochs: 50
+    Results:
+      - Task: Object Detection
+        Dataset: COCO
+        Metrics:
+          box AP: 42.3
+    Weights: https://download.openmmlab.com/mmdetection/v3.0/diffusiondet/diffusiondet_r50_fpn_500-proposals_1-step_crop-ms-480-800-450k_coco/diffusiondet_r50_fpn_500-proposals_1-step_crop-ms-480-800-450k_coco_20230215_090925-7d6ed504.pth
+
